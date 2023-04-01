@@ -11,8 +11,8 @@
     <link rel="shortcut icon" href="../imagenes/favicon-sin-fondo.png" type="image/x-icon">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500&family=Marcellus&family=Merriweather&family=Mukta:wght@800&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500&family=Marcellus&family=Merriweather&family=Mukta:wght@200;800&family=Roboto+Mono&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -51,10 +51,72 @@
         <p>hola zona</p>
     </main>
     <!-- pie de pagina -->
-    <footer>
-        <div>
-            <img class="imgfondo pp40" src="../imagenes/logo-pie-de-pagina.png" alt="logo">
+    <footer class="gridPie">
+        <div class="logoPie">
+            <div class="mb20">
+                <!-- logo -->
+                <img class="imglogofooter" src="../imagenes/logo-pie-de-pagina.png" alt="logo2">
+            </div>
+                <!-- copy -->
+            <article class="article_div_footer">
+                <p>Copyright © 2023 - Diego Pasinato Agrotecnología</p>
+                <p>Desarrollo Web Coderhouse - Lucio Perez Sardi</p>
+            </article>
         </div>
+        <!-- Contacto -->
+        <section class="contacto">
+            <h4>Contacto</h4>
+            <article class="contacto_article_section_footer">
+                <!-- Direccion -->
+                <div>
+                    <a href="https://www.google.com/maps/place/Uruguay+265,+E3100+Paran%C3%A1,+Entre+R%C3%ADos/@-31.7315457,-60.5258723,19.6z/data=!4m6!3m5!1s0x95b45279954954db:0x12f02bb3da1ac93e!8m2!3d-31.7315166!4d-60.5255106!16s%2Fg%2F11r6s33013">
+                        <img class="symbol p20" src="../imagenes/ubicacion.png" alt="ubicación">
+                    </a>
+                </div>
+                <div>
+                    <p class="mb0">Dirección</p>
+                    <p class="mt2">Uruguay 265, Paraná, Entre Ríos</p>
+                </div>
+            </article>
+            <article class="contacto_article_section_footer">
+            <!-- Telefono -->
+                <div>
+                    <a href="https://api.whatsapp.com/send/?phone=5493434387768&text&type=phone_number&app_absent=0"><img class="symbol p20" src="../imagenes/telefono.png" alt="telefono"></a>
+                </div>
+                <div>
+                    <p class="mb0">Teléfono</p>
+                    <p class="mt2">+54 9 3434 387768</p>
+                </div>
+            </article>
+            <article class="contacto_article_section_footer">
+            <!-- email -->
+                <div>
+                    <img class="symbol p20" src="../imagenes/email.png" alt="email">
+                </div>
+                <div>
+                    <p class="mb0">Email</p>
+                    <p class="mt2"><a href="mailto:info@diegopasinato.com.ar">info@diegopasinato.com.ar</a></p>
+                </div>
+            </article> 
+        </section>
+        <!-- redes sociales  -->
+        <nav class="rss">
+                <h4 class="pl55">Redes sociales:</h4>
+                <ul class="ul_nav_footer">
+                    <li><a href="https://ar.linkedin.com/" target="_blank">
+                        <img class="rss_nav_footer" src="../imagenes/linkedin.jpg" alt="linkedin">
+                    </a></li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=5493434387768&text&type=phone_number&app_absent=0" >
+                        <img class="rss_nav_footer" src="../imagenes/wp.jpg" alt="whatsapp">
+                    </a></li>
+                    <li><a href="https://www.instagram.com/diegopasinatoagrotecnologia/?hl=es-la">
+                        <img class="rss_nav_footer" src="../imagenes/instagram.jpg" alt="instagram">
+                    </a></li>
+                    <li><a href="https://www.facebook.com/people/Diego-Pasinato-Agrotecnologia/100083069749897/">
+                        <img class="rss_nav_footer" src="../imagenes/facebook.jpg" alt="fb">
+                    </a></li>
+                </ul>
+        </nav>
     </footer>
     </div>
 </body>

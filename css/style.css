@@ -12,6 +12,8 @@ a{text-decoration: none;}
 .pl60{padding-left: 60px;}
 .mb20{margin-bottom: 20px;}
 .mb10{margin-bottom: 10px;}
+.mb0{margin-bottom: 0px;}
+.mt2{margin-top: 2px;}
 .m20{margin: 20px;}
 .m10{margin: 10px;}
 .m16{margin: 16px;}
@@ -28,6 +30,7 @@ a{text-decoration: none;}
 .imgHeadRed{width: auto;height: 0.6cm;}
 .fmerri{font-family: 'Merriweather', serif;}
 .fontmarcellus{font-family: 'Marcellus', serif;}
+p{font-family: 'Mukta', sans-serif;}
 .f14{font-size: 14;}
 .f12{font-size: 12;}
 .f10{font-size: 10;}
@@ -38,6 +41,7 @@ footer{grid-area: footer;}
 .symbol{width: 40px;height: auto;}
 h4{font-family:'Mukta', sans-serif;
     margin-bottom: 5px;
+    margin-top: 10px;
     font-size: 25px;}
 
 
