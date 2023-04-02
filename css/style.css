@@ -26,24 +26,115 @@ a{text-decoration: none;}
     "main"
     "footer";
 }
-.imgisologo{width: 250px;height: auto;}
+header{grid-area: header;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+.imgisologo{width: 165px;height: auto;}
 .imgHeadRed{width: auto;height: 0.6cm;}
 .fmerri{font-family: 'Merriweather', serif;}
 .fontmarcellus{font-family: 'Marcellus', serif;}
+
 p{font-family: 'Mukta', sans-serif;}
+h1{font-family: 'Mukta', sans-serif;
+font-size: 80px;
+text-align: center;
+background: none;}
+div{background: none;}
+
 .f14{font-size: 14;}
 .f12{font-size: 12;}
 .f10{font-size: 10;}
 .f25{font-size: 25;}
-header{grid-area: header;}
-main{grid-area: main;}
-footer{grid-area: footer;}
+
 .symbol{width: 40px;height: auto;}
 h4{font-family:'Mukta', sans-serif;
     margin-bottom: 5px;
     margin-top: 10px;
     font-size: 25px;}
 
+/* header general */
+header nav ul li a{
+    transition: all .5s ease;
+}
+header nav ul div li a:hover{
+letter-spacing: 1px;
+ color: hsl(136, 57%, 30%);
+ border-radius: 100px;
+}
+header nav ul div li:active{
+letter-spacing: 1px;
+ color: hsl(136, 57%, 30%);
+ border-radius: 100px;
+ transform: translateY(10px);
+ transition: 100ms;
+}
+
+/* main general */
+h1, h2, h3, h4, p, section, div{background: none;}
+.fondoS1{
+    background-image: url(../imagenes/tractor-sembradora.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.fondoS2{
+    background-image: url(../imagenes/fondo-minimalista-s2.jpg);
+    background-repeat: repeat;
+}
+
+.buttonSoporte {
+ padding: 17px 18px;
+ border-radius: 50px;
+ border: 1px;
+ background-color: black;
+ box-shadow: rgba(29, 29, 29, 0.05) 0 0 8px;
+ letter-spacing: 1.2px;
+ text-transform: uppercase;
+ font-size: 15px;
+ transition: all .5s ease;
+}
+.buttonSoporte:hover {
+ letter-spacing: 3px;
+ background-color: hsl(136, 57%, 30%);
+ color: hsl(0, 0%, 100%);
+ box-shadow: rgb(24, 220, 40) 0px 7px 29px 0px;
+}
+.buttonSoporte:active {
+ letter-spacing: 3px;
+ background-color: hsl(136, 57%, 30%);
+ color: hsl(0, 0%, 100%);
+ box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
+ transform: translateY(10px);
+ transition: 100ms;
+}
+.buttonNos {
+ padding: 15px 38px;
+ color: black;
+ border-radius: 50px;
+ border: 3px black solid;
+ background-color: rgb(255, 255, 255);
+ box-shadow: rgba(29, 29, 29, 0.05) 0 0 8px;
+ letter-spacing: 1.2px;
+ text-transform: uppercase;
+ font-size: 15px;
+ transition: all .5s ease;
+}
+.buttonNos:hover {
+ letter-spacing: 3px;
+ border: 0;
+ background-color: hsl(136, 57%, 30%);
+ color: hsl(0, 0%, 100%);
+ box-shadow: rgb(24, 220, 40) 0px 7px 29px 0px;
+}
+.buttonNos:active {
+ letter-spacing: 3px;
+ border: 0;
+ background-color: hsl(136, 57%, 30%);
+ color: hsl(0, 0%, 100%);
+ box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
+ transform: translateY(10px);
+ transition: 100ms;
+}
 
 /* Mobile */
 @media (max-width:768px){
