@@ -228,6 +228,9 @@ letter-spacing: 1px;
         background-color: rgba(37, 34, 34, 0.712);
         border-radius: 20px;
     }
+    .agro{display: flex; align-items: center;}
+    .agro div{display: flex; flex-direction: column;}
+    .fotoAgro img{width: 100%;}
 }
 
 /* Tablet */
