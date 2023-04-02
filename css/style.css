@@ -143,15 +143,17 @@ letter-spacing: 1px;
 @media (max-width:768px){
     header{display: flex;
     flex-direction: column;
-    flex-direction: column;
-    align-items: center;}
+    align-items: center;
+    height: max-content;}
+    .imgisologo{margin-top: 30px;}
     /* encabezado provisorio hasta saber hacer menu desplegable */
     .stickyIsologo{position: fixed;
     top: 0;
     padding: 0 100%;
+    background-color:  rgb(21, 21, 21);
     z-index: 1;}
     header, nav{position: relative;
-    top: 56px;
+    top: 45px;
     z-index: 0;}
     header{height: 235px;width: 100%;}
     /* desde comentario anterior hasta acá borrar una vez que sepa hacer el menú desplegable */
@@ -163,6 +165,20 @@ letter-spacing: 1px;
         padding: 10px;
         align-items: center;}
     a{text-align: center;}
+    /* main */
+    .intro article{display: flex; justify-content: center;}
+    .intro article h1{margin-top: 20px;
+    background-color: rgb(255, 255, 255, 0.7);
+    width: max-content;
+    height: max-content;
+    border-radius: 20px;
+    padding: 0 15px;
+    line-height: 90px;
+}
+.intro div{margin: 0 0 40px 50px;
+    display: flex;
+    align-items: flex-end;
+}
 }
 
 /* Tablet */
@@ -267,14 +283,15 @@ letter-spacing: 1px;
     }
     .intro article{display: flex; justify-content: center;}
     .intro article h1{margin-top: 20px;
-        background-color: rgb(255, 255, 255, 0.7);
-        width: max-content;
-        height: max-content;
-        border-radius: 20px;
-        padding: 0 15px;
+    background-color: rgb(255, 255, 255, 0.7);
+    width: max-content;
+    height: max-content;
+    border-radius: 20px;
+    padding: 0 15px;
+    line-height: 90px;
     }
     .intro div{margin: 0 0 40px 50px;
-        display: flex;
-        align-items: flex-end;
+    display: flex;
+    align-items: flex-end;
     }
 }
