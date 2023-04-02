@@ -32,10 +32,14 @@ main{grid-area: main;}
 footer{grid-area: footer;}
 .imgisologo{width: 165px;height: auto;}
 .imgHeadRed{width: auto;height: 0.6cm;}
+    /* fonts */
 .fmerri{font-family: 'Merriweather', serif;}
 .fontmarcellus{font-family: 'Marcellus', serif;}
+.fontSourceSansPro{font-family: 'Source Sans Pro', sans-serif;}
+.fontOpenSansInclinado{font-family: 'Open Sans', sans-serif;
+}
 
-p{font-family: 'Mukta', sans-serif;}
+header p, footer p{font-family: 'Mukta', sans-serif;}
 h1{font-family: 'Mukta', sans-serif;
 font-size: 80px;
 text-align: center;
@@ -71,17 +75,42 @@ letter-spacing: 1px;
 }
 
 /* main general */
+.fondoS2 div p{display: flex;text-align: center;}
+/* Fuentes */
+.green{color: rgb(37, 131, 89);}
+.darkgreen{color: rgb(2, 90, 50);}
+.fSec2{font-size: 25px;
+    margin: 30px 0 0px 0;
+}
+.agro h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.agro p{color: rgb(1, 30, 3);
+    text-align: justify; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
     /* fondos */
 .fondoS1{
     background-image: url(../imagenes/29.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     height: 600px;
 }
 .fondoS2{
     background-image: url(../imagenes/fondo-minimalista-s2.jpg);
     background-repeat: repeat;
+}
+.fondoS3{background-image: url(../imagenes/23.png);
+    background-size: cover;
+    background-position: center center;
+}
+.fondoDivS3{background-color: rgba(241, 233, 233, 0.52);
+    border-radius: 5px;
 }
 
     /* botones */
@@ -165,7 +194,9 @@ letter-spacing: 1px;
         padding: 10px;
         align-items: center;}
     a{text-align: center;}
+    
     /* main */
+        /* seccion 1 */
     .intro article{display: flex; justify-content: center;}
     .intro article h1{margin-top: 20px;
     background-color: rgb(255, 255, 255, 0.7);
@@ -174,11 +205,29 @@ letter-spacing: 1px;
     border-radius: 20px;
     padding: 0 15px;
     line-height: 90px;
-}
-.intro div{margin: 0 0 40px 50px;
-    display: flex;
-    align-items: flex-end;
-}
+    }
+    .intro div{margin: 0 0 40px 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+        /* seccion 2 */
+    .fondoS2 div img{height: auto;
+        width: 48px;
+        border-radius: 9px;
+    }
+    .fondoS2{display: flex;
+        justify-content: center;
+    }
+    .fondoS2 div{display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 38px 20px;
+        padding: 20px;
+        width: 265px;
+        background-color: rgba(37, 34, 34, 0.712);
+        border-radius: 20px;
+    }
 }
 
 /* Tablet */
@@ -294,4 +343,34 @@ letter-spacing: 1px;
     display: flex;
     align-items: flex-end;
     }
+        /* seccion 2 */
+    .fondoS2 div img{height: auto;
+        width: 48px;
+        border-radius: 9px;
+    }
+    .fondoS2{display: flex;
+        justify-content: center;
+    }
+    .fondoS2 div{display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 38px 20px;
+        padding: 20px;
+        width: 265px;
+        background-color: rgba(37, 34, 34, 0.712);
+        border-radius: 20px;
+    }
+        /* seccion 3 */
+    .agro{display: flex;align-items: center;}
+    .agro div{display: flex; flex-direction: column;
+        align-items: flex-start;
+        margin: 20px;
+    }
+    .fotoAgro img{width: 100%;height: auto;
+    }
+    .fotoAgro{display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
