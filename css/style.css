@@ -38,7 +38,8 @@ p{font-family: 'Mukta', sans-serif;}
 h1{font-family: 'Mukta', sans-serif;
 font-size: 80px;
 text-align: center;
-background: none;}
+background: none;
+color: rgb(35, 107, 75);}
 h1, h2, h3, h4, p, section, div{background: none;}
 
 .f14{font-size: 14;}
@@ -71,8 +72,9 @@ letter-spacing: 1px;
 
 /* main general */
 
+    /* fondos */
 .fondoS1{
-    background-image: url(../imagenes/tractor-sembradora.jpg);
+    background-image: url(../imagenes/29.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
@@ -82,6 +84,7 @@ letter-spacing: 1px;
     background-repeat: repeat;
 }
 
+    /* botones */
 .buttonSoporte {
  padding: 17px 18px;
  border-radius: 50px;
@@ -179,6 +182,7 @@ letter-spacing: 1px;
 }
 /* Desktop */
 @media (min-width:1024px){
+    /* header */
    header{display: flex;
         justify-content: space-between;
         align-items: center;
@@ -195,6 +199,8 @@ letter-spacing: 1px;
         justify-content: flex-end;
     }
     .div_ul_nav_Header li{padding: 10px;}
+
+    /* footer */
     .gridPie{display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -232,7 +238,9 @@ letter-spacing: 1px;
     }
     .ul_nav_footer li{padding: 11px;}
     .article_div_footer{text-align: center;}
+
     /* main */
+        /* main grids */
     .gridMain{
         display: grid;
         grid-template-rows: auto auto auto auto;
@@ -251,4 +259,12 @@ letter-spacing: 1px;
     .tecno1{grid-area: tecno1;}
     .tecno2{grid-area: tecno2;}
     .info{grid-area: info;}
+        /* sección 1 */
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .intro h1{margin-top: 20px;}
+    .intro div{margin: 0 0 40px 50px}
 }
