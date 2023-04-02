@@ -39,7 +39,7 @@ h1{font-family: 'Mukta', sans-serif;
 font-size: 80px;
 text-align: center;
 background: none;}
-div{background: none;}
+h1, h2, h3, h4, p, section, div{background: none;}
 
 .f14{font-size: 14;}
 .f12{font-size: 12;}
@@ -70,7 +70,7 @@ letter-spacing: 1px;
 }
 
 /* main general */
-h1, h2, h3, h4, p, section, div{background: none;}
+
 .fondoS1{
     background-image: url(../imagenes/tractor-sembradora.jpg);
     background-repeat: no-repeat;
@@ -232,4 +232,23 @@ h1, h2, h3, h4, p, section, div{background: none;}
     }
     .ul_nav_footer li{padding: 11px;}
     .article_div_footer{text-align: center;}
+    /* main */
+    .gridMain{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "intro intro"
+        "caract caract"
+        "agro fotoAgro"
+        "tecno1 tecno2"
+        "info info";
+    }
+    .intro{grid-area: intro;}
+    .caract{grid-area: caract;}
+    .agro{grid-area: agro;}
+    .fotoAgro{grid-area: fotoAgro;}
+    .tecno1{grid-area: tecno1;}
+    .tecno2{grid-area: tecno2;}
+    .info{grid-area: info;}
 }
