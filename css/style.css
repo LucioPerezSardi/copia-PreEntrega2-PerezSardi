@@ -57,7 +57,7 @@ h4{font-family:'Mukta', sans-serif;
     margin-top: 10px;
     font-size: 25px;}
 
-/* header general */
+/* botones header */
 header nav ul li a{
     transition: all .5s ease;
 }
@@ -92,14 +92,19 @@ letter-spacing: 1px;
     margin-left: 20px;
     margin-right: 20px;
 }
+.tituloTecno{
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
 
     /* fondos */
 .fondoS1{
-    background-image: url(../imagenes/29.png);
+    background-image: url(../imagenes/portada2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 600px;
+    height: 700px;
 }
 .fondoS2{
     background-image: url(../imagenes/fondo-minimalista-s2.jpg);
@@ -111,6 +116,16 @@ letter-spacing: 1px;
 }
 .fondoDivS3{background-color: rgba(241, 233, 233, 0.52);
     border-radius: 5px;
+}
+.fondoS4{background-image: url(../imagenes/22.png);
+    background-size: cover;
+    background-position: center center;  
+}
+.fondoS4Ptitulo{background-color: rgb(35, 107, 75);
+    font-family: 'Raleway', sans-serif;
+}
+.fondoS4Pparrafo{background-color: rgb(39, 47, 38);
+    font-family: 'Lato', sans-serif;
 }
 
     /* botones */
@@ -168,6 +183,21 @@ letter-spacing: 1px;
  transition: 100ms;
 }
 
+/* boton final main */
+.info p a{
+    transition: all .5s ease;
+}
+.info p a:hover{
+ color: hsl(136, 57%, 30%);
+ border-radius: 100px;
+}
+.info p:active{
+ color: hsl(136, 57%, 30%);
+ border-radius: 100px;
+ transform: translateY(10px);
+ transition: 100ms;
+}
+
 /* Mobile */
 @media (max-width:768px){
     header{display: flex;
@@ -209,7 +239,7 @@ letter-spacing: 1px;
     .intro div{margin: 0 0 40px 50px;
         display: flex;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 190px;
     }
         /* seccion 2 */
     .fondoS2 div img{height: auto;
@@ -228,9 +258,21 @@ letter-spacing: 1px;
         background-color: rgba(37, 34, 34, 0.712);
         border-radius: 20px;
     }
+        /* seccion 3 */
     .agro{display: flex; align-items: center;}
     .agro div{display: flex; flex-direction: column;}
     .fotoAgro img{width: 100%;}
+        /* seccion 4 */
+    .tecno1, .tecno2, .tecno1 div, .tecno2 div{display: block;}
+    .tecno1{margin: 30px 60px 0px 60px; padding-bottom: 0;}
+    .tecno2{margin: 0px 60px 0px 60px; padding-top: 0;}    
+    .tecno1 div p, .tecno2 div p{
+        border-radius: 2px; 
+        margin: 0; 
+        padding: 13px;
+        box-shadow: rgba(212, 206, 206, 0.555) 0 0 8px;
+        text-align: justify;}
+        .info{margin: 0px 60px 30px 70px;}
 }
 
 /* Tablet */
@@ -317,6 +359,7 @@ letter-spacing: 1px;
         "intro intro"
         "caract caract"
         "agro fotoAgro"
+        "tituloTecno tituloTecno"
         "tecno1 tecno2"
         "info info";
     }
@@ -324,6 +367,7 @@ letter-spacing: 1px;
     .caract{grid-area: caract;}
     .agro{grid-area: agro;}
     .fotoAgro{grid-area: fotoAgro;}
+    .tituloTecno{grid-area: tituloTecno;}
     .tecno1{grid-area: tecno1;}
     .tecno2{grid-area: tecno2;}
     .info{grid-area: info;}
@@ -375,5 +419,15 @@ letter-spacing: 1px;
         align-items: center;
         justify-content: center;
     }
-    
+        /* seccion 4 */
+    .tecno1{margin: 30px 5px 30px 120px;}
+    .tecno2{margin: 30px 120px 30px 5px;}    
+    .tecno1 div p, .tecno2 div p{
+        border-radius: 2px; 
+        margin: 0; 
+        padding: 13px;
+        box-shadow: rgba(212, 206, 206, 0.555) 0 0 8px;
+        text-align: justify;
+    }
+    .info{margin: 16px 20px 30px 120px;}
 }
