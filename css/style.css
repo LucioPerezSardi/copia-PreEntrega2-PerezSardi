@@ -38,6 +38,8 @@ footer{grid-area: footer;}
 .fontSourceSansPro{font-family: 'Source Sans Pro', sans-serif;}
 .fontOpenSansInclinado{font-family: 'Open Sans', sans-serif;
 }
+.fontSourceSans3{font-family: 'Source Sans 3', sans-serif;
+}
 
 header p, footer p{font-family: 'Mukta', sans-serif;}
 h1{font-family: 'Mukta', sans-serif;
