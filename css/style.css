@@ -45,7 +45,7 @@ header p, footer p{font-family: 'Mukta', sans-serif;}
 h1{font-family: 'Mukta', sans-serif;
 font-size: 80px;
 text-align: center;
-color: rgb(35, 107, 75);}
+color: rgb(0 185 103);}
 
 
 .f14{font-size: 14;}
@@ -95,10 +95,14 @@ letter-spacing: 1px;
     margin-right: 20px;
 }
 .tituloTecno{
-    font-size: 40px;
+    font-size: 2.2rem;
     margin-bottom: 10px;
     margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(0 0 0 / 12%);
+    text-shadow: 0 0 5px black;
 }
+.underline{text-decoration: underline;}
 
     /* fondos */
 .fondoS1{
@@ -262,14 +266,15 @@ letter-spacing: 1px;
     /* main */
         /* seccion 1 */
     .intro article{display: flex; justify-content: center;}
-    .intro article h1{margin-top: 20px;
-    background-color: rgb(255, 255, 255, 0.7);
-    width: max-content;
-    height: max-content;
-    border-radius: 20px;
-    padding: 0 15px;
-    line-height: 90px;
-    font-size: 50px;
+    .intro article h1{margin-top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: max-content;
+        height: max-content;
+        border-radius: 2px;
+        padding: 0;
+        line-height: 90px;
+        font-size: 3rem;
+        text-shadow: black 0 0 5px;
     }
     .intro div{margin: 0 0 40px 0px;
         display: flex;
@@ -409,7 +414,9 @@ letter-spacing: 1px;
     .caract{grid-area: caract;}
     .agro{grid-area: agro;}
     .fotoAgro{grid-area: fotoAgro;}
-    .tituloTecno{grid-area: tituloTecno;}
+    .tituloTecno{grid-area: tituloTecno;
+        width: max-content;
+    }
     .tecno1{grid-area: tecno1;}
     .tecno2{grid-area: tecno2;}
     .info{grid-area: info;}
@@ -420,13 +427,18 @@ letter-spacing: 1px;
         grid-template-columns: 100%;
     }
     .intro article{display: flex; justify-content: center;}
-    .intro article h1{margin-top: 20px;
-    background-color: rgb(255, 255, 255, 0.7);
-    width: max-content;
-    height: max-content;
-    border-radius: 20px;
-    padding: 0 15px;
+    .intro article h1{margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    text-shadow: white;
     line-height: 90px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: #0000009e 0px 0px 6px;
     }
     .intro div{margin: 0 0 40px 50px;
     display: flex;
