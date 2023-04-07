@@ -18,6 +18,9 @@ a{text-decoration: none;}
 .m20{margin: 20px;}
 .m10{margin: 10px;}
 .m16{margin: 16px;}
+.borderTop{border-top: 1px rgb(94, 94, 94) solid;}
+.borderBotom{border-bottom: 1px rgb(94, 94, 94) solid;}
+.borderRight{border-right: 1px rgb(94, 94, 94) solid;}
 .gridIndex{
     display: grid;
     grid-template-rows: auto auto auto;
@@ -45,7 +48,7 @@ header p, footer p{font-family: 'Mukta', sans-serif;}
 h1{font-family: 'Mukta', sans-serif;
 font-size: 80px;
 text-align: center;
-color: rgb(0 185 103);}
+color: rgb(32 149 97);}
 
 
 .f14{font-size: 14;}
@@ -188,16 +191,22 @@ letter-spacing: 1px;
  transform: translateY(10px);
  transition: 100ms;
 }
-
+/* boton whatsapp */
+.wp{width: 3em;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 100%;
+}
 /* boton final main */
-.info p a{
+.botonSimple{
     transition: all .5s ease;
 }
-.info p a:hover{
+.botonSimple:hover{
  color: hsl(136, 57%, 30%);
  border-radius: 100px;
 }
-.info p:active{
+.despBoton:active{
  color: hsl(136, 57%, 30%);
  border-radius: 100px;
  transform: translateY(10px);
@@ -263,7 +272,7 @@ letter-spacing: 1px;
     .mobileDireccion{margin-left: 40px;}
     .rss ul{flex-direction: row;}
 
-    /* main */
+    /* Inicio */
         /* seccion 1 */
     .intro article{display: flex; justify-content: center;}
     .intro article h1{margin-top: 0;
@@ -320,7 +329,14 @@ letter-spacing: 1px;
         .info{margin: 0px 20px 30px 20px;
             text-align: center;
         }
+
+
+    /* Empresa */
 }
+
+
+
+
 
 /* Tablet */
 @media (min-width:769px) and (max-width:1023px){
@@ -337,8 +353,15 @@ letter-spacing: 1px;
      justify-content: flex-end;}
     ul, nav, li{padding: 10px;}
 }
+
+
+
+
+
+
 /* Desktop */
 @media (min-width:1024px){
+
     /* header */
    header{display: flex;
         justify-content: space-between;
@@ -396,11 +419,11 @@ letter-spacing: 1px;
     .ul_nav_footer li{padding: 11px;}
     .article_div_footer{text-align: center;}
 
-    /* main */
+    /* Inicio */
         /* main grids */
     .gridMain{
         display: grid;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
         grid-template-columns: 50% 50%;
         grid-template-areas: 
         "intro intro"
@@ -484,4 +507,27 @@ letter-spacing: 1px;
         text-align: justify;
     }
     .info{margin: 16px 20px 30px 120px;}
+
+    /* Empresa */
+    .gridEmpresa{display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: 
+        "tituloPpalEmpresa tituloPpalEmpresa tituloPpalEmpresa tituloPpalEmpresa tituloPpalEmpresa tituloPpalEmpresa"
+        "nosot nosot nosot ImgNoso ImgNoso ImgNoso"
+        "mision mision imgRedonda imgRedonda vision vision";
+    }
+    .tituloPpalEmpresa{grid-area: tituloPpalEmpresa;}
+    .nosot{grid-area: nosot;}
+    .ImgNoso{grid-area: ImgNoso;}
+    .mision{grid-area: mision;}
+    .imgRedonda{grid-area: imgRedonda;}
+    .vision{grid-area: vision;}
+        /* Sección 1 */
+        /* Sección 2 */
+        /* Sección 3 */
+
+    /* Productos y servicios */
+    
 }
+
