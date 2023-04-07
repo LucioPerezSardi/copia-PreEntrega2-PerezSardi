@@ -18,6 +18,9 @@ a{text-decoration: none;}
 .m20{margin: 20px;}
 .m10{margin: 10px;}
 .m16{margin: 16px;}
+.borderTop{border-top: 1px rgb(94, 94, 94) solid;}
+.borderBotom{border-bottom: 1px rgb(94, 94, 94) solid;}
+.borderRight{border-right: 1px rgb(94, 94, 94) solid;}
 .gridIndex{
     display: grid;
     grid-template-rows: auto auto auto;
@@ -188,16 +191,22 @@ letter-spacing: 1px;
  transform: translateY(10px);
  transition: 100ms;
 }
-
+/* boton whatsapp */
+.wp{width: 3em;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 100%;
+}
 /* boton final main */
-.info p a{
+.botonSimple{
     transition: all .5s ease;
 }
-.info p a:hover{
+.botonSimple:hover{
  color: hsl(136, 57%, 30%);
  border-radius: 100px;
 }
-.info p:active{
+.despBoton:active{
  color: hsl(136, 57%, 30%);
  border-radius: 100px;
  transform: translateY(10px);
@@ -514,4 +523,11 @@ letter-spacing: 1px;
     .mision{grid-area: mision;}
     .imgRedonda{grid-area: imgRedonda;}
     .vision{grid-area: vision;}
+        /* Sección 1 */
+        /* Sección 2 */
+        /* Sección 3 */
+
+    /* Productos y servicios */
+    
 }
+
