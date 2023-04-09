@@ -18,6 +18,7 @@ a{text-decoration: none;}
 .m20{margin: 20px;}
 .m10{margin: 10px;}
 .m16{margin: 16px;}
+.m2em{margin: 2em;}
 .borderTop{border-top: 1px rgb(94, 94, 94) solid;}
 .borderBotom{border-bottom: 1px rgb(94, 94, 94) solid;}
 .borderRight{border-right: 1px rgb(94, 94, 94) solid;}
@@ -34,7 +35,13 @@ header{grid-area: header;}
 main{grid-area: main;}
 footer{grid-area: footer;}
 .imgisologo{width: 165px;height: auto;}
-.imgHeadRed{width: auto;height: 0.6cm;}
+.imgHeadRed{width: auto;height: 1.7em;
+}
+.imgHeadRed:hover {width: 1.8em;
+    height: auto;
+}
+
+
     /* fonts */
 .fmerri{font-family: 'Merriweather', serif;}
 .fontmarcellus{font-family: 'Marcellus', serif;}
@@ -65,14 +72,15 @@ h4{font-family:'Mukta', sans-serif;
 /* botones header */
 header nav ul li a{
     transition: all .5s ease;
+    font-size: 0.85em;
 }
 header nav ul div li a:hover{
-letter-spacing: 1px;
+letter-spacing: 0.5px;
  color: hsl(136, 57%, 30%);
  border-radius: 100px;
 }
 header nav ul div li:active{
-letter-spacing: 1px;
+letter-spacing: 0.5px;
  color: hsl(136, 57%, 30%);
  border-radius: 100px;
  transform: translateY(10px);
@@ -226,7 +234,7 @@ letter-spacing: 1px;
     flex-direction: column;
     gap: 10px;
     width: 20em;
-    margin: 5em 0 7em 0;
+    margin: 5em 1em 7em 1em;
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 0.4em;
@@ -235,19 +243,23 @@ letter-spacing: 1px;
     transition: .4s ease-in-out;
 }
 .Usuario:hover {
-    transform: scale(1.05);
+    transform: scale(1);
     border: 1px solid black;
+    z-index: 0;
 }
-  
+.z-index-up{z-index: 50;}
 .heading {
     text-align: center;
-    margin: 2em;
-    color: rgb(37 132 111);
+    margin: 2em 2em 2em 0.4em;
+    color: white;
     font-size: 1.2em;
     font-family: 'Source Sans Pro', sans-serif;
     text-shadow: rgb(0, 0, 0) 0px 0px 2px;
-}
-  
+}  
+.loginTitulo{display: flex;
+    justify-content: center;
+    align-items: center;}
+.imglogin{width: auto;height: 1.5em;}
 .field {
     display: flex;
     align-items: center;
@@ -257,7 +269,7 @@ letter-spacing: 1px;
     padding: 0.6em;
     border: none;
     outline: none;
-    color: white;
+    color: rgb(37 132 111);
     background-color: rgb(23, 23, 23);
     box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
 }
@@ -290,6 +302,8 @@ letter-spacing: 1px;
     transition: .4s ease-in-out;
     background-color: #252525;
     color: white;
+    text-align: center;
+    width: 50%;
   }
   
   .button1:hover {
@@ -307,6 +321,7 @@ letter-spacing: 1px;
     transition: .4s ease-in-out;
     background-color: #252525;
     color: white;
+    width: 50%;
   }
   
   .button2:hover {
