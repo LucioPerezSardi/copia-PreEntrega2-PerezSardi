@@ -465,7 +465,7 @@ letter-spacing: 0.5px;
             align-items: center;
             justify-content: center;
     }
-    header{height: auto;width: 100%;}
+    header{height: auto;width: auto;}
     /* desde comentario anterior hasta acá borrar una vez que sepa hacer el menú desplegable */
     
     ul{display: flex;
