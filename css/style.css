@@ -345,7 +345,12 @@ letter-spacing: 0.5px;
     color: white;
   }
 
-
+/* Empresa Gral */
+.vision{grid-area: vision;}
+.imgRedonda{border-radius: 100%;
+        border: #a9a3a3 solid 1px;
+        box-shadow: 0px 0px 20px Green ;
+}
 
 
 /* Mobile */
@@ -659,8 +664,9 @@ letter-spacing: 0.5px;
     .nosot{grid-area: nosot;}
     .ImgNoso{grid-area: ImgNoso;}
     .mision{grid-area: mision;}
-    .imgRedonda{grid-area: imgRedonda;}
-    .vision{grid-area: vision;}
+    .imgGrup{grid-area: imgRedonda;
+    }
+    
         /* Sección 1 */
         /* Sección 2 */
         /* Sección 3 */

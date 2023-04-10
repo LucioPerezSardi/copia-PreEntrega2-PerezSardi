@@ -49,10 +49,43 @@
         </header>
     <!-- contenido principal -->
         <main>
-            <p>¿Preguntas?</p>
-            <h1>Realice su consulta o solicite un servicio a continuación</h1>
             <div>
-                
+                <p>¿Preguntas?</p>
+                <h1>Realice su consulta o solicite un servicio a continuación</h1>
+            </div>
+            <div>
+                <form action="#">
+                    <div class="formIzq">
+                        <div>
+                            <label for="nombre">Nombre</label>
+                                <br>
+                            <input name="nombre" id="nombre">
+                        </div>
+                        <div>
+                            <label for="email">E-mail</label>
+                                <br>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="phone_number">Teléfono</label>
+                                <br>
+                            <input type="tel" name="phone_number" id="phone_number">
+                        </div>
+                    </div>
+                    <div class="formDer">
+                        <label for="Consulta">Consulta</label>
+                            <br>
+                        <input type="text" name="consulta" id="consulta">
+                    </div>
+                    <div class="formAb">
+                        <label for="bot">No soy un robot</label>
+                            <select name="nobot" id="nobot">
+                                <option value="yes">SI</option>
+                                <option value="no">NO</option></select>
+                            <br>
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
             </div>
         </main>
     <!-- pie de pagina -->
