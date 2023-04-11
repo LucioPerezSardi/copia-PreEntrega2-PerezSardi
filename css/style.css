@@ -468,6 +468,19 @@ letter-spacing: 0.5px;
     color: white;
 }
 
+/* Zona de cobertura Gral */
+.fondoZona{
+    background-image: url(../imagenes/22.png);
+    background-size: cover;
+}
+.frameZona{width: 80%;}
+.frameVideo{
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    border: #a9a3a3 solid 1.5px;
+    
+}
 
 /* Contacto Gral */
 .gridContacto{display: grid;
