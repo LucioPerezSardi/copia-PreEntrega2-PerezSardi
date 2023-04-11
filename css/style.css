@@ -5,6 +5,7 @@ body{margin: 5px;}
 ul{list-style-type: none;}
 a{text-decoration: none;}
 .img-fluid{width:100%;height: auto;}
+.textJustify{text-align: justify;}
 .p20{padding:20px;}
 .p10{padding:10px;}
 .plat20{padding: 0 20px;}
@@ -347,10 +348,59 @@ letter-spacing: 0.5px;
   }
 
 /* Empresa Gral */
-.vision{grid-area: vision;}
-.imgRedonda{border-radius: 100%;
-        border: #a9a3a3 solid 1px;
-        box-shadow: 0px 0px 20px Green ;
+.fondoEmpresa{
+    background-image: url(../imagenes/21.png);
+    background-size: cover;
+    background-position: bottom;
+}
+.nuestroEquipo{
+    margin: 0 0 0 0;
+    height: auto;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: #0000009e 0px 0px 6px;
+}
+.tituloPpalEmpresa{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    border-radius: 2px;
+}
+.subtituloEmpresa{
+    text-align: center;
+    margin: 0 0 56px 0;
+    font-size: 25px;
+    color: #a9b1af;
+    padding-bottom: 20px;
+}
+.parrafoEmpresa{
+    padding: 60px;
+    text-align: justify;
+    margin: 0 0 56px 0;
+    font-size: 25px;
+    color: #a9b1af;
+}
+.imgRedonda{
+    border-radius: 100%;
+    border: #a9a3a3 solid 1px;
+    box-shadow: 0px 0px 20px Green ;
+}
+.tituloMisVis{
+    text-align: center;
+    font-size: 5em;
+    color: #008062;
+    margin: 0 0 30px 0;
+}
+.mision, .vision{
+    background-color: rgb(8 16 21 / 69%);
+    width: 80%;
+    height: 80%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Contacto Gral */
@@ -453,6 +503,11 @@ letter-spacing: 0.5px;
     flex-direction: column;
     align-items: center;
     height: max-content;}
+    header nav ul div li a:hover{
+        letter-spacing: 0px;
+        color: hsl(136, 57%, 30%);
+        border-radius: 100px;
+    }
     .imgisologo{margin-top: 30px;}
     /* encabezado provisorio hasta saber hacer menu desplegable */
     .stickyIsologo{position: fixed;
@@ -565,6 +620,9 @@ letter-spacing: 0.5px;
 
 
     /* Empresa */
+    .nuestroEquipo{font-size: 60px;}
+    .subtituloEmpresa{margin: 0;}
+    .parrafoEmpresa{margin: 0; padding: 20px;}
 
 
     /* Contacto */
@@ -748,14 +806,15 @@ letter-spacing: 0.5px;
 
     /* Empresa */
     .gridEmpresa{display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-areas: 
-        "tituloPpalEmpresa tituloPpalEmpresa tituloPpalEmpresa tituloPpalEmpresa tituloPpalEmpresa tituloPpalEmpresa"
-        "nosot nosot nosot ImgNoso ImgNoso ImgNoso"
-        "mision mision imgRedonda imgRedonda vision vision";
-    justify-items: center;
-    align-items: center;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: 
+            "tituloPpalEmpresa tituloPpalEmpresa tituloPpalEmpresa tituloPpalEmpresa tituloPpalEmpresa tituloPpalEmpresa"
+            "nosot nosot nosot ImgNoso ImgNoso ImgNoso"
+            "mision mision imgRedonda imgRedonda vision vision";
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
     }
     .tituloPpalEmpresa{grid-area: tituloPpalEmpresa;}
     .nosot{grid-area: nosot;}
@@ -763,6 +822,8 @@ letter-spacing: 0.5px;
     .mision{grid-area: mision;}
     .imgGrup{grid-area: imgRedonda;
     }
+    .vision{grid-area: vision;}
+
     
         /* Sección 1 */
         /* Sección 2 */
