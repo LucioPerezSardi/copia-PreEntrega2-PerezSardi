@@ -8,14 +8,17 @@ a{text-decoration: none;}
 .textJustify{text-align: justify;}
 .p20{padding:20px;}
 .p10{padding:10px;}
+.p40{padding:40px;}
 .plat20{padding: 0 20px;}
 .pl40{padding-left: 40px;}
 .pl55{padding-left: 55px;}
 .pl60{padding-left: 60px;}
 .mb20{margin-bottom: 20px;}
 .mb10{margin-bottom: 10px;}
+.mb40{margin-bottom: 40px;}
 .mb0{margin-bottom: 0px;}
 .mt2{margin-top: 2px;}
+.mt280{margin-top: 280px;}
 .m20{margin: 20px;}
 .m10{margin: 10px;}
 .m16{margin: 16px;}
@@ -52,6 +55,7 @@ footer{grid-area: footer;}
 .fontSourceSans3{font-family: 'Source Sans 3', sans-serif;
 }
 .fontMukta{font-family: 'Mukta', sans-serif;}
+.fontRaleway{font-family: 'Raleway', sans-serif;}
 header p, footer p{font-family: 'Mukta', sans-serif;}
 h1{font-family: 'Mukta', sans-serif;
 font-size: 80px;
@@ -403,6 +407,68 @@ letter-spacing: 0.5px;
     align-items: center;
 }
 
+
+/* Producto y Servicio */
+.fondoProdS1{
+    background-image: url(../imagenes/fondoProducto.png);
+    background-position: center;
+    background-size: cover;
+    height: 610px;
+}
+.w20em{width: 20em;}
+.fondoProdS2{
+    background-image: url(../imagenes/fondo-minimalista-s2.jpg);
+    background-size: auto;
+    padding-top: 40px;
+}
+.subtituloProductos{
+    font-size: 40px;
+    margin: 0 40px 20px 40px;
+    padding: 30px;
+    background-color: rgb(17 17 21 / 89%);
+    width: 60%;
+    border-radius: 5px;
+    font-family: 'Mukta', sans-serif;
+}
+.card{
+    border-radius: 25px;
+    padding: 25px;
+    border: none;
+    margin: 37px 0 25px 0;
+    box-shadow: inset 0px 0px 10px rgb(51 51 55);
+    background-color: rgba(45, 40, 40, 0.98);
+    width: 253px;
+}
+.fondoProdS3{
+    background-image: url(../imagenes/30.png);
+    background-size: cover;
+    background-position: center;
+}
+.servicio{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+.buttonService{
+    margin: 0;
+    padding: 3em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525c1;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    height: 100%;
+    border: 2px white solid;
+}
+.buttonService:hover{
+    background-color: rgb(22, 71, 60);
+    color: white;
+}
+
+
 /* Contacto Gral */
 .gridContacto{display: grid;
     grid-template-columns: 100%;
@@ -624,6 +690,15 @@ letter-spacing: 0.5px;
     .subtituloEmpresa{margin: 0;}
     .parrafoEmpresa{margin: 0; padding: 20px;}
 
+    /* Productos y Servicios */
+    .centerProd{display: flex;
+        flex-direction: column; 
+        align-items: center;}
+    .distrCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     /* Contacto */
     .consultaHeight{height: 13em;}
@@ -830,8 +905,16 @@ letter-spacing: 0.5px;
         /* Sección 3 */
 
     /* Productos y servicios */
-    
-
+    .centerProd{display: flex;
+        flex-direction: row; 
+        justify-content: center;
+    }
+    .distrCard{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
     /* Contacto */
     .gridForm{
         display: grid;
