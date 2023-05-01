@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Pasinato</title>
+    <!-- Etiquetas meta SEO -->
+    <meta name="description" content="Página de login, Diego Pasinato Agrotecnología. Realizando el registro en la página el usuario podrá mantenerse al tanto con las nuevas tecnologías agricolas y contratar nuestros servicios.">
+    <meta name="keywords" content="Agrotecnologia, inicio de sesión, registrarse, contraseña, campo, plantacion, optimización, aire a condicionado">
+    <!-- link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- favicon -->
@@ -32,7 +37,6 @@
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="empresa.html">Empresa</a></li>
                     <li><a href="prodyserv.html">Productos y Servicios</a></li>
-                    <li><a href="zonadecob.html">Zona de cobertura</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     </div>
                     <!-- redes y login -->
@@ -49,7 +53,8 @@
         </header>
     <!-- contenido principal -->
     <main class="centrar fondoUsuario">
-        <form class="Usuario">
+        <form class="Usuario" data-aos="zoom-in"
+        data-aos-duration="1500">
             <div class="loginTitulo">
                 <div>
                     <img class="imglogin" src="../imagenes/login-perfil.png" alt="iconoPassword">
@@ -141,5 +146,10 @@
         </nav>
     </footer>
     </div>
+    <!-- link js AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
