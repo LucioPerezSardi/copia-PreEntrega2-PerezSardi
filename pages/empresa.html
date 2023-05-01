@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Pasinato</title>
+    <!-- Etiquetas meta SEO -->
+    <meta name="description" content="Diego Pasinato Agrotecnología es una empresa con más de diez años de experiencia en el rubro, compuesta de númerosas metas y valores.">
+    <meta name="keywords" content="Agrotecnologia, quienes somos, nuestra historia, mision, valores, campo, plantacion, optimización, aire a condicionado">
+    <!-- link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- favicon -->
@@ -15,9 +20,9 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500&family=Marcellus&family=Merriweather&family=Mukta:wght@200;800&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div><a href="https://api.whatsapp.com/send/?phone=5493434387768&text&type=phone_number&app_absent=0"><img class="wp" src="../imagenes/wp-por-encima.png" alt="whatsapp"></a></div>
+    <div><a href="https://api.whatsapp.com/send/?phone=5493434387768&text&type=phone_number&app_absent=0"><img class="wp z-index-up" src="../imagenes/wp-por-encima.png" alt="whatsapp"></a></div>
     <div  class="gridIndex">
-        <header class="p10 mb20">
+        <header class="p10 mb20 z-index-up">
             <!-- logo + nav -->
             <div class="stickyIsologo">
                 <!-- logo -->
@@ -31,7 +36,6 @@
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="#">Empresa</a></li>
                     <li><a href="prodyserv.html">Productos y Servicios</a></li>
-                    <li><a href="zonadecob.html">Zona de cobertura</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     </div>
                     <!-- redes y login -->
@@ -49,26 +53,27 @@
     <!-- contenido principal -->
     <main class="fondoEmpresa">
         <div class="gridEmpresa">
-            <div class="tituloPpalEmpresa">
+            <div class="tituloPpalEmpresa" data-aos="fade-down"
+            data-aos-duration="3000">
                 <h1 class="nuestroEquipo">Nuestro equipo</h1>
                 <p class="subtituloEmpresa fontSourceSans3">Somos una empresa que ofrece agrotecnología con servicio de soporte técnico, mantenimiento y productos para el agro.</p>
             </div>
-            <div class="nosot">
+            <div class="nosot" data-aos="fade-right" data-aos-duration="2500">
                 <p class="parrafoEmpresa fontMukta">Contamos con un equipo de expertos, altamente capacitados, para brindar soporte y asistencia técnica a nuestros clientes y para asegurar que los equipos funcionen de manera efectiva con nuestro servicio de mantenimiento preventivo y correctivo.</p>
             </div>
             <div class="ImgNoso">
-                <img class="img-fluid" src="../imagenes/Empresa-2.png" alt="equipo">
+                <img class="img-fluid" src="../imagenes/Empresa-2.png" alt="equipo" data-aos="fade-left" data-aos-duration="2500">
             </div>
-            <div class="mision m20 p20">
+            <div class="mision m20 p20" data-aos="flip-left" data-aos-duration="2000">
                 <h2 class="tituloMisVis fontSourceSans3">Misión</h2>
                 <p class="fontMukta textJustify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsum similique, praesentium porro atque ad possimus reiciendis perspiciatis beatae expedita soluta aperiam ut ducimus excepturi, alias eos molestias modi laborum?</p>
             </div>
             <div class="imgGrup m20">
                 <div>
-                    <img class="img-fluid imgRedonda" src="../imagenes/Empresa-1.png" alt="equipo2">
+                    <img class="img-fluid imgRedonda" src="../imagenes/Empresa-1.png" alt="equipo2" data-aos="zoom-in" data-aos-duration="2000">
                 </div>
             </div>
-            <div class="vision m20 p20">
+            <div class="vision m20 p20" data-aos="flip-right" data-aos-duration="2000">
                 <h2 class="tituloMisVis fontSourceSans3">Visión</h2>
                 <p class="fontMukta textJustify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quos, ducimus sed, minima voluptatibus tempore commodi esse quasi voluptate nemo vel? Eum mollitia culpa atque nostrum consequatur perspiciatis repellat ab.</p>
             </div>
@@ -143,5 +148,10 @@
         </nav>
     </footer>
     </div>
+    <!-- link js AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
