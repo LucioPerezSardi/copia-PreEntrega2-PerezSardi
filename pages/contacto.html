@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Pasinato</title>
+    <!-- Etiquetas meta SEO -->
+    <meta name="description" content="Contacto de Diego Pasinato Agrotecnología. ">
+    <meta name="keywords" content="Agrotecnologia, consulta, pregunta, contratar servicio, monitores de siembra, boquillas, pulverización, campo, plantacion, optimización, aire a condicionado">
+    <!-- link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- favicon -->
@@ -16,7 +21,7 @@
 
 </head>
 <body>
-    <div><a href="https://api.whatsapp.com/send/?phone=5493434387768&text&type=phone_number&app_absent=0"><img class="wp" src="../imagenes/wp-por-encima.png" alt="whatsapp"></a></div>
+    <div><a href="https://api.whatsapp.com/send/?phone=5493434387768&text&type=phone_number&app_absent=0"><img class="wp z-index-up" src="../imagenes/wp-por-encima.png" alt="whatsapp"></a></div>
     <div  class="gridIndex">
         <header class="p10 mb20 z-index-up">
             <!-- logo + nav -->
@@ -32,7 +37,6 @@
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="empresa.html">Empresa</a></li>
                     <li><a href="prodyserv.html">Productos y Servicios</a></li>
-                    <li><a href="zonadecob.html">Zona de cobertura</a></li>
                     <li><a href="#">Contacto</a></li>
                     </div>
                     <!-- redes y login -->
@@ -50,11 +54,14 @@
     <!-- contenido principal -->
         <main class="gridContacto borderTop borderBotom fondoContacto">
             <div class="center boxShadow">
-                <p class="preguntas fontSourceSansPro">¿Preguntas?</p>
-                <h1 class="consultaServicio">Realice su consulta o solicite un servicio a continuación:</h1>
+                <p class="preguntas fontSourceSansPro" data-aos="fade-down"
+                data-aos-duration="2000">¿Preguntas?</p>
+                <h1 class="consultaServicio" data-aos="fade-down"
+                data-aos-duration="2000">Realice su consulta o solicite un servicio a continuación:</h1>
             </div>
             <div>
-                <form action="#" class="cuadroGrande gridForm Usuario">
+                <form action="#" class="cuadroGrande gridForm Usuario" data-aos="zoom-in"
+                data-aos-duration="2000">
                     <div class="formIzq">
                         <div class="textSart">
                             <label for="nombre">Nombre</label>
@@ -178,5 +185,10 @@
             </nav>
         </footer>
     </div>
+    <!-- link js AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
